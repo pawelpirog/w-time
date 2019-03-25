@@ -1,0 +1,62 @@
+<body>
+<!--The content below is only a placeholder and can be replaced.-->
+<app-header></app-header>
+<div class="all">
+  <div style="text-align:center">
+    <!--<h1>-->
+    <!--Welcome dzisiaj {{ title }}!-->
+    <!--</h1>-->
+
+
+
+    <img width="300" src="https://media.licdn.com/dms/image/C4D0BAQFlYJUXirAbpw/company-logo_200_200/0?e=2159024400&v=beta&t=e41dRm19ptfHwMj3mkWHcrEMkFhC6-nPPqKcmmeV1mk">
+  </div>
+
+
+
+
+
+  <!--<h2>Here are some links to help you start: </h2>-->
+  <!--<ul>-->
+  <!--<li>-->
+  <!--<h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>-->
+  <!--</li>-->
+  <!--<li>-->
+  <!--<h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>-->
+  <!--</li>-->
+  <!--<li>-->
+  <!--<h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>-->
+  <!--</li>-->
+  <!--</ul>-->
+
+
+  <p class="mojTekst">zaloguj sie</p>
+  <form>
+    <div class="mojForm">
+
+      <label for="Identyfikator">Identyfikator</label><br>
+      <input type="text" class="mojForm" id="identyfikator" required="required"><br>
+    </div>
+
+    <div class="mojForm">
+      <label for="haslo">Hasło</label><br>
+      <input type="password" class="mojForm" id="haslo" required="required"><br>
+      <a href="xx"> zapomniałem hasła</a>
+      <br>
+
+      <button type="submit" class="btn btn-success">zaloguj</button>
+
+      <button class="nav-item nav-link-edit" [routerLink]="['worker-table']">home</button >
+    </div>
+
+
+
+  </form>
+
+</div>
+
+</body>
+<app-footer></app-footer>
+
+
+<router-outlet></router-outlet>

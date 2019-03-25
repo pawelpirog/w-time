@@ -1,0 +1,64 @@
+<app-header></app-header>
+
+<body>
+<div class="row">
+
+  <div class="col-sm-1"></div>
+
+  <div class="col-sm-4">
+
+    <label for="imie">imie</label><br>
+    <input type="text" class="mojForm" id="imie" required="required"><br>
+
+    <label for="nazwisko">nazwisko</label><br>
+    <input type="text" class="mojForm" id="nazwisko" required="required"><br>
+
+    <label for="adres">adres</label><br>
+    <input type="text" class="mojForm" id="adres" required="required"><br>
+
+    <label for="mail">mail</label><br>
+    <input type="text" class="mojForm" id="mail" required="required"><br>
+
+  </div>
+
+
+  <div class="col-sm-2"></div>
+
+  <div class="col-sm-4">
+
+
+    <label>forma  zatrudnienia</label>
+    <br>
+    <select class="ddlist">
+      <option value="umZlecenie">umowa  zlecenie</option>
+      <option value="uop">umowa o prace</option>
+      <option value="uod">umowa  o dzielo</option>
+      <option value="inna">inna</option>
+    </select>
+
+
+
+
+<br>
+    <label for="pensja">pensja</label><br>
+    <input type="text" class="mojForm" id="pensja" required="required"><br>
+
+<br><br><br><br>
+    <button class="ddlist" [routerLink]="['worker-table']">modyfikuj</button >
+
+
+
+
+  </div>
+
+
+
+
+
+
+</div>
+
+
+</body>
+
+<app-footer></app-footer>

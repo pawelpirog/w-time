@@ -1,0 +1,10 @@
+.ogloszenia{
+  text-align: center;
+  font-size: 35px;
+
+
+}
+body{
+  min-height: 180px;
+  background-color: cadetblue;
+}
