@@ -19,6 +19,7 @@ public class Delegacja {
 
     @ManyToOne(fetch = FetchType.LAZY)
     private Worker worker;
+    int pp=5;
 
 
     public Delegacja(String miejsce) {
