@@ -11,5 +11,9 @@ public interface WorkerRepository extends JpaRepository <Worker, Long> {
     //List<Worker> findAllBy
 
 
+
+
+    public Worker findWorkerByUsername(String username);
 }
+
 
