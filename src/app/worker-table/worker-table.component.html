@@ -11,29 +11,38 @@
 </div>
 
 
-<div class="row">
-  <div class="col-sm-2"> </div>
+<!--<div class="row">-->
+  <!--<div class="col-sm-2"> </div>-->
 
-  <div class="col-sm-4">
-    <button class="nav-item nav-link-edit" [routerLink]="['worker-table']" >zobacz swój kalendarz </button ><br><br>
-    <button class="nav-item nav-link-edit" [routerLink]="['worker-table']">napisz podanie</button ><br><br>
-    <button class="nav-item nav-link-edit" [routerLink]="['worker-table']">wyślij zwolnienie</button ><br><br>
-    <button class="nav-item nav-link-edit" [routerLink]="['worker-table']">napisz maila</button >
-
-
-
-  </div>
-<div class="col-sm-6">
-  informacje bieżące:<br>
-  w tym miesiącu szacowana pensja: 2500 pln brutto, <br>
-  szacowana liczba przepracowanych godzin: 85
+  <!--<div class="col-sm-4">-->
+    <!--<button class="nav-item nav-link-edit" [routerLink]="['worker-table']" >zobacz swój kalendarz </button ><br><br>-->
+    <!--<button class="nav-item nav-link-edit" [routerLink]="['worker-table']">napisz podanie</button ><br><br>-->
+    <!--<button class="nav-item nav-link-edit" [routerLink]="['worker-table']">wyślij zwolnienie</button ><br><br>-->
+    <!--<button class="nav-item nav-link-edit" [routerLink]="['worker-table']">napisz maila</button >-->
 
 
 
+  <!--</div>-->
+<!--<div class="col-sm-6">-->
+  <!--informacje bieżące:<br>-->
+  <!--w tym miesiącu szacowana pensja: 2500 pln brutto, <br>-->
+  <!--szacowana liczba przepracowanych godzin: 85-->
+
+
+
+<!--</div>-->
+
+<!--</div>-->
+
+
+<h1>Greeting</h1>
+<div [hidden]="!authenticated()">
+  <p>The ID is {{greeting.id}}</p>
+  <p>The content is {{greeting.content}}</p>
 </div>
-
+<div [hidden]="authenticated()">
+  <p>Login to see your greeting</p>
 </div>
-
 
 
 </body>

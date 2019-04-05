@@ -1,0 +1,16 @@
+<app-header></app-header>
+  allworkers works!
+
+<h2>My Heroes</h2>
+<ul class="heroes">
+  <!-- <li>
+    <span class="badge">{{hero.id}}</span> {{hero.name}}
+  </li> -->
+  <li *ngFor="let worker of workers$" >
+    <span class="badge">{{worker.imie}}</span> {{worker.nazwisko}}
+  </li>
+</ul>
+
+
+
+<app-footer></app-footer>

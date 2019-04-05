@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { RandomthingComponent } from './randomthing.component';
+import { AllworkersComponent } from './allworkers.component';
 
-describe('RandomthingComponent', () => {
-  let component: RandomthingComponent;
-  let fixture: ComponentFixture<RandomthingComponent>;
+describe('AllworkersComponent', () => {
+  let component: AllworkersComponent;
+  let fixture: ComponentFixture<AllworkersComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ RandomthingComponent ]
+      declarations: [ AllworkersComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(RandomthingComponent);
+    fixture = TestBed.createComponent(AllworkersComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

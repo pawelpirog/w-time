@@ -1,64 +1,118 @@
-<app-header></app-header>
+<!--<app-header></app-header>-->
 
-<body>
-<div class="row">
-
-  <div class="col-sm-1"></div>
-
-  <div class="col-sm-4">
-
-    <label for="imie">imie</label><br>
-    <input type="text" class="mojForm" id="imie" required="required"><br>
-
-    <label for="nazwisko">nazwisko</label><br>
-    <input type="text" class="mojForm" id="nazwisko" required="required"><br>
-
-    <label for="adres">adres</label><br>
-    <input type="text" class="mojForm" id="adres" required="required"><br>
-
-    <label for="mail">mail</label><br>
-    <input type="text" class="mojForm" id="mail" required="required"><br>
-
-  </div>
+<!--<body>-->
 
 
-  <div class="col-sm-2"></div>
+<!--<h2>Register</h2>-->
+<!--<form [formGroup]="registerForm" (ngSubmit)="onSubmit()">-->
+  <!--<div class="form-group">-->
+    <!--<label for="firstName">First Name</label>-->
+    <!--<input type="text" formControlName="firstName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.firstName.errors }" />-->
+    <!--<div *ngIf="submitted && f.firstName.errors" class="invalid-feedback">-->
+      <!--<div *ngIf="f.firstName.errors.required">First Name is required</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+    <!--<label for="lastName">Last Name</label>-->
+    <!--<input type="text" formControlName="lastName" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.lastName.errors }" />-->
+    <!--<div *ngIf="submitted && f.lastName.errors" class="invalid-feedback">-->
+      <!--<div *ngIf="f.lastName.errors.required">Last Name is required</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+    <!--<label for="username2">Username</label>-->
+    <!--<input type="text" formControlName="username2" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.username.errors }" />-->
+    <!--<div *ngIf="submitted && f.username.errors" class="invalid-feedback">-->
+      <!--<div *ngIf="f.username.errors.required">Username is required</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+    <!--<label for="password">Password</label>-->
+    <!--<input type="password" formControlName="password" class="form-control" [ngClass]="{ 'is-invalid': submitted && f.password.errors }" />-->
+    <!--<div *ngIf="submitted && f.password.errors" class="invalid-feedback">-->
+      <!--<div *ngIf="f.password.errors.required">Password is required</div>-->
+      <!--<div *ngIf="f.password.errors.minlength">Password must be at least 6 characters</div>-->
+    <!--</div>-->
+  <!--</div>-->
+  <!--<div class="form-group">-->
+    <!--<button [disabled]="loading" class="btn btn-primary">Register</button>-->
 
-  <div class="col-sm-4">
-
-
-    <label>forma  zatrudnienia</label>
-    <br>
-    <select class="ddlist">
-      <option value="umZlecenie">umowa  zlecenie</option>
-      <option value="uop">umowa o prace</option>
-      <option value="uod">umowa  o dzielo</option>
-      <option value="inna">inna</option>
-    </select>
-
-
-
-
-<br>
-    <label for="pensja">pensja</label><br>
-    <input type="text" class="mojForm" id="pensja" required="required"><br>
-
-<br><br><br><br>
-    <button class="ddlist" [routerLink]="['worker-table']">modyfikuj</button >
-
-
-
-
-  </div>
+  <!--</div>-->
+<!--</form>-->
+<!--</body>-->
 
 
 
 
 
 
-</div>
 
 
-</body>
 
-<app-footer></app-footer>
+
+
+<!--&lt;!&ndash;<div class="row">&ndash;&gt;-->
+  <!--&lt;!&ndash;<form role="form" (submit)="login()">&ndash;&gt;-->
+  <!--&lt;!&ndash;<div class="col-sm-1"></div>&ndash;&gt;-->
+
+  <!--&lt;!&ndash;<div class="col-sm-4">&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<label for="imie">imie</label><br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<input type="text" [(ngModel)]="user.imie" class="mojForm" id="imie" required="required"><br>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<label for="nazwisko">nazwisko</label><br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<input type="text" [(ngModel)]="user.nazwisko" class="mojForm" id="nazwisko" required="required"><br>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<label for="adres">adres</label><br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<input type="text" [(ngModel)]="user.adres" class="mojForm" id="adres" required="required"><br>&ndash;&gt;-->
+
+    <!--&lt;!&ndash;<label for="mail">mail</label><br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<input type="text" [(ngModel)]="user.mail" class="mojForm" id="mail" required="required"><br>&ndash;&gt;-->
+
+
+
+
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+  <!--&lt;!&ndash;<div class="col-sm-2"></div>&ndash;&gt;-->
+
+  <!--&lt;!&ndash;<div class="col-sm-4">&ndash;&gt;-->
+
+
+    <!--&lt;!&ndash;<label>forma  zatrudnienia</label>&ndash;&gt;-->
+    <!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<select class="ddlist">&ndash;&gt;-->
+      <!--&lt;!&ndash;<option value="umZlecenie">umowa  zlecenie</option>&ndash;&gt;-->
+      <!--&lt;!&ndash;<option value="uop">umowa o prace</option>&ndash;&gt;-->
+      <!--&lt;!&ndash;<option value="uod">umowa  o dzielo</option>&ndash;&gt;-->
+      <!--&lt;!&ndash;<option value="inna">inna</option>&ndash;&gt;-->
+    <!--&lt;!&ndash;</select>&ndash;&gt;-->
+
+
+
+
+<!--&lt;!&ndash;<br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<label for="pensja">pensja</label><br>&ndash;&gt;-->
+    <!--&lt;!&ndash;<input type="text" class="mojForm" id="pensja" required="required"><br>&ndash;&gt;-->
+
+<!--&lt;!&ndash;<br><br><br><br>&ndash;&gt;-->
+
+
+
+  <!--&lt;!&ndash;</div>&ndash;&gt;-->
+    <!--&lt;!&ndash;<button class="btn btn-success" (click)="addWorker()">Create</button>&ndash;&gt;-->
+
+
+  <!--&lt;!&ndash;</form>&ndash;&gt;-->
+<!--&lt;!&ndash;</div>&ndash;&gt;-->
+
+
+
+
+
+
+
+
+
+<!--<app-footer></app-footer>-->
