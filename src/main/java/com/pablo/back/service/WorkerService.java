@@ -21,12 +21,22 @@ public class WorkerService {
     }
 
     public Worker find(String userName) {
-        return workerRepository.findWorkerByUsername(userName);
+        return workerRepository.findWorkerByNick(userName);
     }
 
-//    public Worker find(Long id) {
-//        return workerRepository.findOne(id);
-//    }
+    public void deleteWorker(long id){
+        workerRepository.delete(workerRepository.getOne(id));
+    }
+
+
+    public Worker loginWorker(String username, String password) {
+        Worker worker = this.find(username);
+        if (worker != null && worker.getHaslo().equals(password)) {
+            return worker;
+        }
+
+        return null;
+    }
 }
 
 

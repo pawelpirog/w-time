@@ -12,8 +12,11 @@ public interface WorkerRepository extends JpaRepository <Worker, Long> {
 
 
 
+    public Worker findWorkerByWorkerID(long id);
+    public Worker findWorkerByNick(String nick);
 
-    public Worker findWorkerByUsername(String username);
 }
+
+
 
 

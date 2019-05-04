@@ -35,17 +35,21 @@ public class DbSeeder implements CommandLineRunner {
        this.tydzienRoboczyRepository.deleteAll();
 
 
-      Worker defaultWorker=new Worker("pies","Jan","Kowalski","piesek");
+      Worker defaultWorker=new Worker("Jan","Kowalski","pies","piesek", "pies@pies.com");
         workerRepository.save(defaultWorker);
 
-        TydzienRoboczy defaultTydzienRoboczy = new TydzienRoboczy();
-        this.tydzienRoboczyRepository.save(defaultTydzienRoboczy);
+        Worker defaultWorker2=new Worker("Pawel","Nowak","kot","kotek", "kot@pies.com");
+        workerRepository.save(defaultWorker2);
 
-        TydzienRoboczy defaultTydzienRoboczy2=new TydzienRoboczy(new Date(2000,2,10),new Date(2000,2,17));
-        this.tydzienRoboczyRepository.save(defaultTydzienRoboczy2);
 
-        Delegacja defaultDelegacja=new Delegacja("kraków");
-        this.delegacjaRepository.save(defaultDelegacja);
+//        TydzienRoboczy defaultTydzienRoboczy = new TydzienRoboczy();
+//        this.tydzienRoboczyRepository.save(defaultTydzienRoboczy);
+//
+//        TydzienRoboczy defaultTydzienRoboczy2=new TydzienRoboczy(new Date(2000,2,10),new Date(2000,2,17));
+//        this.tydzienRoboczyRepository.save(defaultTydzienRoboczy2);
+//
+//        Delegacja defaultDelegacja=new Delegacja("kraków");
+//        this.delegacjaRepository.save(defaultDelegacja);
 
         //Delegacja defaultDelegacja2=new Delegacja("warszawa",defaultWorker);
 
@@ -53,5 +57,9 @@ public class DbSeeder implements CommandLineRunner {
 
         System.out.println("udalo sie");
 
+
+
     }
+
+
 }
